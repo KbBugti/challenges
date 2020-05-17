@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 25rem;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 17.5rem;
+    height: 100%;
+    font-size: 0.5rem;
+    background-color: #5fcb5f;
+    color: white;
+}
+
+.header .blogname {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header .pf-section {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    font-size: bold;
+    font-weight: 1rem;
+    width: 8rem;
+}
+
+.pf-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: non;
+    color: white;
+    font-size: 1rem;
+}
+
+.mainpage-wrapper {
+    padding-top: 2rem;
+    margin-left: 20%;
+    max-width: 890px;
+}
+
+.container {
+    max-width: 890px;
+}
+
+.mainpage-wrapper a {
+    text-decoration: non;
+    color: #5fcb5f;
+    font-size: 1rem;
+}
+
+.item {
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.news-img {
+    padding: 1rem;
+    padding-top: .5rem;
+    width: 8rem;
+    height: 10rem;
+}
+
+.fa {
+    padding-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 4rem;
+    color: purple;
+    display: inline-block;
+}
+
+.fas {
+    font-size: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    color: gray;
+}
+
+@media (min-width: 375px) and (max-width: 980px) {
+    .header {
+        width: 100%;
+        height: auto;
+        background-color: gainsboro;
+    }
+    .header .blogname {
+        color: black;
+        position: absolute;
+        left: 0;
+        top: 1rem;
+    }
+    .header .navbar-dark {
+        background-color: #5fcb5f;
+    }
+    .header .navbar-dark {
+        padding: 0.5rem;
+    }
+    .mainpage-wrapper {
+        margin-left: 0;
+    }
+}

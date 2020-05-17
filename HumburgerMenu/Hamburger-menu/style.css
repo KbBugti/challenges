@@ -1,0 +1,148 @@
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        height: 100vh;
+    }
+    
+    #top-header {
+        margin-top: 2em;
+    }
+    
+    .toggle {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .toggle span {
+        width: 50%;
+        height: 4px;
+        position: absolute;
+        transition: 0.5s;
+        background: #262626;
+        transform: translateX(-50%);
+    }
+    
+    .toggle span:nth-child(1) {
+        top: 30%;
+        left: 50%;
+    }
+    
+    .toggle span:nth-child(2) {
+        bottom: 30%;
+        left: 50%;
+    }
+    
+    .toggle.active span:nth-child(1) {
+        top: 45%;
+        left: 50%;
+        width: 60%;
+    }
+    
+    .toggle.active span:nth-child(2) {
+        bottom: 45%;
+        left: 50%;
+        width: 60%;
+    }
+    
+    .toggle.active span:nth-child(1) {
+        transform: translate(-50%, -50%)rotate(135deg);
+    }
+    
+    .toggle.active span:nth-child(2) {
+        transform: translate(-50%, -50%)rotate(220deg);
+    }
+    
+    .toggle.active span {
+        background: #fff;
+    }
+    
+    .toggle:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 4px;
+        background: #262626;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    
+    .toggle.active:before {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .toggle .menu {
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 auto 1rem;
+    }
+    
+    .menu a {
+        padding: .5em 0;
+        font-size: .8em;
+        transition: all .5s ease;
+    }
+    
+    .menu il:before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: #fff;
+        margin: 0 auto 1rem;
+    }
+    
+    .menu a:hover .menu.active {
+        color: #262626;
+        /* border: solid 1px #262626; */
+    }
+    
+    #toggle {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    /* #toggle,
+    #toggle a {
+        width: 44px;
+        height: 44px;
+        overflow: hidden;
+        background-color: #fc0;
+    } */
+    
+    #toggle a {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu-is-open #opem-menu {
+        display: none;
+    }
+    
+    #close-menu {}
+    /* MOBILE NAV */
+    
+    .menu-is-open {
+        overflow: hidden;
+    }
+    
+    #menu-is-open #toggle {
+        position: absolute;
+        margin-top: 2em;
+    }
+    
+    #menu-is-open #toggle {
+        display: block;
+        background-color: rgb(red, green, blue);
+    }

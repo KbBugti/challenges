@@ -1,0 +1,139 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    border-bottom: 1px solid #eaeaea;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+span {
+    color: #54d154;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #eaeaea;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+
+/* Other function */
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 60px;
+    height: 60px;
+    background: #0d0d;
+    display: inline-block;
+    border-radius: 500px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#wrapper .menu {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    clear: right;
+    top: 7px;
+    padding-left: 6px;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s;
+}
+
+.top {
+    top: 18%;
+}
+
+.middle {
+    top: 48%;
+}
+
+.bottom {
+    top: 78%
+}
+
+.icon.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+}
+
+.icon.close .middle,
+.icon.close .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
+}

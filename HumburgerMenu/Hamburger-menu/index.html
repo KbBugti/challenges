@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="menu-is-open">
+
+    <!-- <nav class="container navbar navbar-expand-lg bg-danger">
+        <h1>How to learn JavaScripts</h1>
+        <div class="collapse navbar-collapse" id="dropdown">
+            <div>
+                <div>
+                    <div></div>
+                </div>
+            </div>
+            <ul id="menu">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Info</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="https://erikterwan.com/" target="_blank">
+                    <li>Show me more</li>
+                </a>
+            </ul>
+        </div>
+    </nav> -->
+    <header class="top-header" id="top-header row">
+
+        <!-- <figure>
+            <a href="#" id="open-menu" <i class="trigger"></a>
+            <a href="#" id="close-menu" <i class="close-menu"></a>
+        </figure> -->
+
+        <div class="toggle" id="toggle" onclick="add_class()">
+            <span></span>
+            <span></span>
+
+            <ul class="menu row font400" id="close-menu">
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Info</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        const body = document.querySelector("body");
+        const openMenu = document.querySelector("#toggle");
+        const closeMenu = document.querySelector("#close-menu");
+
+
+        openMenu.addEventListener("click", function() {
+            body.classList.add("menu-is-open");
+        });
+
+        closeMenu.addEventListener("click", function() {
+            body.classList.add("menu-is-open");
+        });
+    </script> -->
+
+
+    <script type="text/javascript">
+        function add_class() {
+            let element = document.getElementById("toggle");
+            element.classList.toggle("active");
+        }
+        openMenu.addEventListener("click", function() {
+            body.classList.add("menu-is-open");
+        });
+
+        closeMenu.addEventListener("click", function() {
+            body.classList.add("menu-is-open");
+        });
+    </script>
+
+    <!-- //JavaScripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

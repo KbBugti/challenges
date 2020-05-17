@@ -15,3 +15,33 @@ let numBoys = people.reduce(function(n, person) {
 }, 0);
 
 console.log(numBoys);
+
+
+
+
+//Numbers "increasing", "decreasing" or "neither"
+
+function equal(a, b, c) {
+    if (a === b && a === c) {
+        return 3;
+    } else if (a === b || a === c || b === c) {
+        return 2;
+    } else {
+        return 0;
+    }
+}
+console.log(equal(1, 1, 1));
+
+
+
+function equal(a, b, c) {
+
+    if (a == b & b == c) {
+        return 3 + " --> " + " All 3 values are equal";
+    } else if (a == b || b == c || a == c) {
+        return 2 + " --> " + " Two values are equal";
+    } else {
+        return 0 + " --> " + " All values are differents";
+    }
+}
+console.log(equal(1, 2, 2));

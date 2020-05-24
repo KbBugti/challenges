@@ -1,0 +1,3 @@
+([('clock2',
+   '/Users/mr.nobody/POWERCODERS/challenges/Python/10.Application/dist/clock2',
+   'EXECUTABLE')],)
